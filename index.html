@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шоколадная Душа</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+$(function(){
+$('a[href^="#"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+return false; 
+}); 
+});
+</script>
+
+</head>
+<body>
+    <header id="1">
+        <section class="nav-menu">
+            <p class="chocolate">- Шоколадный бутик -</p>
+            <div class="logo"></div>
+            <hr class="line">
+            <div class="nav">
+                    <a href="#1" class="nav-text">Главная</a>
+                    <a href="#2" class="nav-text">О нас</a>
+                    <a href="#3" class="nav-text">Меню</a>
+                    <a href="#4" class="nav-text">Заказ</a>
+                    <a href="#5" class="nav-text">Контакты</a>
+            </div>
+        </section>
+        <h1 class="header_text">"Шоколад - это любовь,<br>которую можно подарить<br>самому себе"</h1>
+    </header>
+    <main>
+        <section id="2" class="about1">
+            <section class="a11">
+                <div class="ph1"></div>
+                <div class="ph2"></div>
+            </section>
+            <section class="a22">
+                <h1 class="t1">КАКАО</h1>
+                <h6 class="t2">Какао-бобы лучшего качества<br>со всего мира</h6>
+                <hr class="hr1">
+                <p class="t3">Наша продукция премиум класса отвечает<br>массе требваний благодаря какао бобам.<br>Криолло - это самый лучший в мире,<br> элитный сорт какао, обладающий мягким<br> и нежным вкусом без горечи и кислотности,<br> который имеет ярко-выраженный приятный аромат.</p>
+            </section>
+        </section>
+        <section class="about">
+            <span class="text-about">"Кто может быть лучше друга?<br>Только друг с шоколадом"</span>
+            <span class="text-about2">- Линда Грейсон -</span>
+        </section>
+        <section class="masters">
+            <div class="zag">
+                <h1 class="sss">Наши мастера</h1>
+                <hr class="hr2">
+            </div>
+            <section class="mast">
+                <section class="mas1">
+                    <div class="p1"></div>
+                    <span class="sec1">Игорь</span>
+                    <span class="sec2">- Мастер по десертам -<br>26 лет. Профессиональный кондитер<br>igor.chocosoul@mail.com</span>
+                </section>
+                <section class="mas2">
+                    <div class="p2"></div>
+                    <span class="sec1">Александр</span>
+                    <span class="sec2">- Главный кондитер -<br>24 года. Изготовление трюфелей премиум класса<br>alex.chocosoul@mail.com</span>
+                </section>
+                <section class="mas3">
+                    <div class="p3"></div>
+                    <span class="sec1">Елизавета</span>
+                    <span class="sec2">- Бариста -<br>24 года. Профессиональный кофевар<br>liza.chocosoul@mail.com</span>
+                </section>
+            </section>
+        </section>
+        <section id="3" class="main">
+            <section class="magaz">
+                <section class="mmain">
+                    <section class="mmain1">
+                        <section class="tnk">
+                            <div id = "kar1" class="ima1"></div>
+                            <span id="txt1" class="mag1">Трюфель из тёмного<br>шоколада с орехами<br>(8 шт.)</span>
+                            <span id="butt1" class="mag2">В корзину</span>
+                            <span id="price1" class="mag3">1500 ₽</span>
+                        </section>
+                        <section class="tnk">
+                            <div id = "kar2" class="ima2"></div>
+                            <span id="txt2" class="mag1">Трюфель из белого<br>шоколада с орехам<br>(8 шт.)</span>
+                            <span id="butt2" class="mag2">В корзину</span>
+                            <span id="price2" class="mag3">1500 ₽</span>
+                        </section>
+                    </section>
+                    <section class="mmain1">
+                        <section class="tnk">
+                            <div id = "kar3" class="ima3"></div>
+                            <span id="txt3" class="mag1">Трюфель из молочного<br>шоколада с карамелью<br>(8 шт.)</span>
+                            <span id="butt3" class="mag2">В корзину</span>
+                            <span id="price3" class="mag3">1500 ₽</span>
+                        </section>
+                        <section class="tnk">
+                            <div id = "kar4" class="ima4"></div>
+                            <span id="txt4" class="mag1">Трюфель из тёмнгого<br>шоколада с малиной<br>(8 шт.)</span>
+                            <span id="butt4" class="mag2">В корзину</span>
+                            <span id="price4" class="mag3">1500 ₽</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="nav-main">
+                <section class="nav-main1">
+                    <h1 class="lk1">Меню</h1>
+                    <hr class="hr3">
+                    <span id ="btn1" class="navv">Трюфели</span>
+                    <span id ="btn2"  class="navv">Десерты</span>
+                    <span id ="btn3" class="navv">Кофе</span>
+                    <span id ="btn4" class="navv">Шоколад</span>
+                </section>
+                <section class="nav-footer">
+                    <hr class="hrr1">
+                    <span id="korz1" class="hss1">Корзина: 0</span>
+                    <span id="korz2" class="hss1">Сумма: 0 ₽</span>
+                </section>
+            </section>
+        </section>
+        <section id="4" class="zakaz">
+            <section class="z1">
+                <span class="z-text">Заказ</span>
+            </section>
+            <section class="z2">
+                <section class="zak1">
+                    <section class="in1">
+                        <span class="zakk">Ф.И.О</span>
+                        <input class="inp" id="my1">
+                    </section>
+                    <section class="in1">
+                        <span class="zakk">Телефон</span>
+                        <input class="inp" id="my2">
+                    </section>
+                    <section class="in1">
+                        <span class="zakk">Адрес</span>
+                        <input class="inp" id="my3">
+                    </section>
+                    <section class="in1">
+                        <span class="zakk">Электронная почта</span>
+                        <input class="inp" id="my4">
+                    </section>
+                    <section class="in1">
+                        <span class="zakk">Промокод</span>
+                        <input class="inp" id="my5">
+                        <!--<button id="confirm" class="z-text3">Использовать</button>-->
+                        <button id="clicker" class="z-text3">Использовать</button>
+                    </section>
+                </section>
+                <section class="zak2">
+                    <section class="kak-main">
+                        <span class="spann">Корзина:</span>
+                        <ul id="ulka">
+
+                        </ul>
+                    </section>
+                    <section class="kak-footer">
+                        <hr class="hrr">
+                        <span id = "itog" class="hss">ИТОГО: 0₽</span>
+                    </section>
+                </section>
+            </section>
+            <section class="z3">
+                    <input class="z-text" value="Подтвердить" onclick="alert('Спасибо за заказ! Ожидайте нашего звонка на телефон ' + my2.value + ', ' + my1.value + '. ' + 'Сумма вашего заказа: ' + it + '₽')" type="button">
+            </section>
+        </section>
+        <section class="perfooter">
+            <span class="text-about">"Жизнь - как коробка конфет.<br>Никогда не знаешь,<br>какая начинка попадется"</span>
+            <span class="text-about2">- Из фильма "Форест Гамп" -</span>
+        </section>
+    </main>
+    <footer id="5">
+        <section class="f1">
+            <section class="k1">
+                <span class="text-footer">Контакты</span>
+            </section>
+            <section class="k2">
+                <span class="fff">
+                    Эл.Почта : choco@mail.ru<br>
+                    Телефон : +7(999)999-99-99<br>
+                    FAX : (122)987-654x<br>
+                    Адрес : Москва, Горького, 22а<br>
+                    Twitter: @chocosoul<br>
+                    facebook: f/chocosoul
+                </span>
+            </section>
+        </section>
+        <section class="f2"></section>
+        <section class="f3">
+            <div class="log"></div>
+        </section>
+    </footer>
+    <script>
+        let a = 0;
+        let a1 = 0;
+        let a2 = 0;
+        let a3 = 0;
+        let a4 = 0;
+        let b1 = 0;
+        let b2 = 0;
+        let b3 = 0;
+        let b4 = 0;
+        let c1 = 0;
+        let c2 = 0;
+        let c3 = 0;
+        let c4 = 0;
+        let d1 = 0;
+        let d2 = 0;
+        let d3 = 0;
+        let d4 = 0;
+        let it = 0;
+        let pro = 5;
+
+        function onClick1(){
+            pro = 5;
+            kar1.classList.remove('uma1');
+            kar1.classList.remove('cof1');
+            kar1.classList.remove('choc1');
+            kar1.classList.add('ima1');
+            txt1.innerHTML = "Трюфель из тёмного шоколада с орехами (8 шт.)";
+            price1.innerHTML = "1500 ₽";
+
+            kar2.classList.remove('uma2');
+            kar2.classList.remove('cof2');
+            kar2.classList.remove('choc2');
+            kar2.classList.add('ima2'); 
+            txt2.innerHTML = "Трюфель из белого шоколада с орехами (8 шт.)";
+            price2.innerHTML = "1500 ₽";
+
+            kar3.classList.remove('uma3');
+            kar3.classList.remove('cof3');
+            kar3.classList.remove('choc3');
+            kar3.classList.add('ima3');
+            txt3.innerHTML = "Трюфель из молочного шоколада с карамелью (8 шт.)"
+            price3.innerHTML = "1500 ₽";
+
+            kar4.classList.remove('uma4');
+            kar4.classList.remove('cof4');
+            kar4.classList.remove('choc4');
+            kar4.classList.add('ima4');
+            txt4.innerHTML = "Трюфель из тёмнгого шоколада с малиной (8 шт.)"
+            price4.innerHTML = "1500 ₽";
+        }
+
+        function onClick2(){
+            pro = 2;
+            kar1.classList.remove('ima1');
+            kar1.classList.remove('cof1');
+            kar1.classList.remove('choc1');
+            kar1.classList.add('uma1');
+            txt1.innerHTML = "Пирожное с малиной";
+            price1.innerHTML = "900 ₽";
+
+            kar2.classList.remove('ima2');
+            kar2.classList.remove('cof2');
+            kar2.classList.remove('choc2');
+            kar2.classList.add('uma2');
+            txt2.innerHTML = "Пирожное с орехами";
+            price2.innerHTML = "900 ₽";
+
+            kar3.classList.remove('ima3');
+            kar3.classList.remove('cof3');
+            kar3.classList.remove('choc3');
+            kar3.classList.add('uma3');
+            txt3.innerHTML = "Пирожное с шоколадом";
+            price3.innerHTML = "900 ₽";
+
+            kar4.classList.remove('ima4');
+            kar4.classList.remove('ima4');
+            kar4.classList.remove('choc4');
+            kar4.classList.add('uma4');
+            txt4.innerHTML = "Пирожное с бананом";
+            price4.innerHTML = "900 ₽";
+            
+        }
+
+        function onClick3(){
+            pro = 3;
+            kar1.classList.remove('uma1');
+            kar1.classList.remove('ima1');
+            kar1.classList.remove('choc1');
+            kar1.classList.add('cof1');
+            txt1.innerHTML = "Кофе Kenya Aa (250 г)";
+            price1.innerHTML = "545 ₽";
+
+            kar2.classList.remove('ima2');
+            kar2.classList.remove('uma2');
+            kar2.classList.remove('choc2');
+            kar2.classList.add('cof2');
+            txt2.innerHTML = "Кофе Honduras San Marcos (250 г)";
+            price2.innerHTML = "545 ₽";
+
+            kar3.classList.remove('ima3');
+            kar3.classList.remove('uma3');
+            kar3.classList.remove('choc3');
+            kar3.classList.add('cof3');
+            txt3.innerHTML = "Кофе Brazil Bourbon (250 г)";
+            price3.innerHTML = "545 ₽";
+
+            kar4.classList.remove('ima4');
+            kar4.classList.remove('uma4');
+            kar4.classList.remove('choc4');
+            kar4.classList.add('cof4');
+            txt4.innerHTML = "Кофе Mystical Blend (250 г)";
+            price4.innerHTML = "545 ₽";
+        }
+
+        function onClick4(){
+            pro = 7;
+            kar1.classList.remove('uma1');
+            kar1.classList.remove('ima1');
+            kar1.classList.remove('cof1');
+            kar1.classList.add('choc1');
+            txt1.innerHTML = "Тёмный шоколад (2 кг)";
+            price1.innerHTML = "1800 ₽";
+
+            kar2.classList.remove('ima2');
+            kar2.classList.remove('cof2');
+            kar2.classList.remove('uma2');
+            kar2.classList.add('choc2');
+            txt2.innerHTML = "Молочный шоколад (2 кг)";
+            price2.innerHTML = "1800 ₽";
+
+            kar3.classList.remove('ima3');
+            kar3.classList.remove('cof3');
+            kar3.classList.remove('uma3');
+            kar3.classList.add('choc3');
+            txt3.innerHTML = "Белый шоколад (2 кг)";
+            price3.innerHTML = "1800 ₽";
+
+            kar4.classList.remove('ima4');
+            kar4.classList.remove('cof4');
+            kar4.classList.remove('uma4');
+            kar4.classList.add('choc4');
+            txt4.innerHTML = "Цветной шоколад (2 кг)";
+            price4.innerHTML = "1800 ₽";
+        }
+
+        function onClickk1(){
+            a++;
+            if (pro%5==0){
+                it = it +1500;
+                a1++;
+                if (a1<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt1.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%2==0){
+                it = it +900;
+                b1++;
+                if (b1<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt1.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%3==0){
+                it = it +545;
+                c1++;
+                if (c1<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt1.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%7==0){
+                it = it +1800;
+                d1++;
+                if (d1<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt1.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            korz1.innerHTML = "Корзина:" + a;
+            korz2.innerHTML = "Сумма:" + it;
+            itog.innerHTML = "ИТОГО: " + it + " ₽";
+        }
+
+        function onClickk2(){
+            a++;
+            if (pro%5==0){
+                it = it +1500;
+                a2++;
+                if (a2<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt2.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%2==0){
+                it = it +900;
+                b2++;
+                if (b2<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt2.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%3==0){
+                it = it +545;
+                c2++;
+                if (c2<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt2.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%7==0){
+                it = it +1800;
+                d2++;
+                if (d2<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt2.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            
+            korz1.innerHTML = "Корзина:" + a;
+            korz2.innerHTML = "Сумма:" + it;
+            itog.innerHTML = "ИТОГО: " + it + " ₽";
+        }
+
+        function onClickk3(){
+            a++;
+            if (pro%5==0){
+                it = it +1500;
+                a3++;
+                if (a3<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt3.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%2==0){
+                it = it +900;
+                b3++;
+                if (b3<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt3.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%3==0){
+                it = it +545;
+                c3++;
+                if (c3<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt3.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%7==0){
+                it = it +1800;
+                d3++;
+                if (d3<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt3.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            korz1.innerHTML = "Корзина:" + a;
+            korz2.innerHTML = "Сумма:" + it;
+            itog.innerHTML = "ИТОГО: " + it + " ₽";
+        }
+
+        function onClickk4(){
+            a++;
+            if (pro%5==0){
+                it = it +1500;
+                a4++;
+                if (a4<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt4.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%2==0){
+                it = it +900;
+                b4++;
+                if (b4<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt4.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%3==0){
+                it = it +545;
+                c4++;
+                if (c4<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt4.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            if (pro%7==0){
+                it = it +1800;
+                d4++;
+                if (d4<2){
+                    let newLi = document.createElement('li');
+                    newLi.innerHTML = txt4.innerHTML;
+                    ulka.appendChild(newLi);
+                }
+            }
+            korz1.innerHTML = "Корзина:" + a;
+            korz2.innerHTML = "Сумма:" + it;
+            itog.innerHTML = "ИТОГО: " + it + " ₽";
+        }
+
+        function onClicker(){
+                if (my5.value == 'school10'){
+                    it = it * 0.75;
+                    korz2.innerHTML = "Сумма:" + it;
+                    itog.innerHTML = "ИТОГО: " + it + " ₽";
+                    alert("Промокод успешно активирован");
+                }
+        }
+
+        btn1.addEventListener("click", onClick1)
+        btn2.addEventListener("click", onClick2)
+        btn3.addEventListener("click", onClick3)
+        btn4.addEventListener("click", onClick4)
+
+        butt1.addEventListener("click", onClickk1)
+        butt2.addEventListener("click", onClickk2)
+        butt3.addEventListener("click", onClickk3)
+        butt4.addEventListener("click", onClickk4)
+        //confirm.addEventListener("click", onClicker)
+        clicker.addEventListener("click", onClicker)
+        
+    </script>
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #756f63 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:119px;}</style>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},2400);};</script>
+    
+</body>
+</html>
